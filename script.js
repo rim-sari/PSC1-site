@@ -11,7 +11,7 @@ const translations = {
         nav_quiz: "Quiz",
         nav_resources: "Ressources",
 
-        welcome_title: "Bienvenue 🎓",
+        welcome_title: "Bienvenue ",
         welcome_text: "Ce site t'aide à réviser les notions clés du PSC1.",
         warning: "⚠️ Ce site ne remplace pas une formation officielle. En cas d'urgence, appelle les secours (15, 18, 112).",
 
@@ -30,9 +30,9 @@ const translations = {
         sheet_malaise: "5. Malaise",
         sheet_wounds: "6. Plaies & brûlures",
 
-        quiz_title: "Quiz PSC1 🧠",
+        quiz_title: "Quiz PSC1 ",
 
-        resources_title: "Ressources & conseils 📚",
+        resources_title: "Ressources & conseils ",
         resource1: "Inscris-toi à une session PSC1 auprès d'une association officielle (Croix-Rouge, Protection Civile, pompiers).",
         resource2: "Relis régulièrement les fiches et supports de ta formation.",
         resource3: "Teste-toi avec des quiz, des jeux de rôle et des mises en situation.",
