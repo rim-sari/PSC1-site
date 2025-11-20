@@ -1,0 +1,460 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+    line-height: 1.5;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: #f9fafb;
+    padding: 1.5rem 0 1.2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25);
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-top: 0.2rem;
+}
+
+nav.header-nav {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+
+nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(209, 213, 219, 0.5);
+}
+
+nav a:hover {
+    background-color: rgba(15, 23, 42, 0.15);
+}
+
+.top-controls {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+main {
+    padding-bottom: 2rem;
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 0.8rem;
+    padding: 1.2rem 1.4rem;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+    transition: background 0.3s, color 0.3s;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.section-text {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin-bottom: 0.8rem;
+}
+
+.warning {
+    margin-top: 0.7rem;
+    background: #fef3c7;
+    color: #92400e;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.6rem;
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn.primary {
+    background: #2563eb;
+    color: white;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
+}
+
+.btn.primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.btn.secondary {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.btn.secondary:hover {
+    background: #d1d5db;
+}
+
+.btn.small {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* Intro */
+
+.intro-buttons {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+/* Fiches */
+
+.grid {
+    margin-top: 1rem;
+    display: grid;
+    gap: 0.9rem;
+}
+
+.fiche {
+    background: #f9fafb;
+    border-radius: 0.7rem;
+    padding: 0.8rem;
+    border: 1px solid #e5e7eb;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fiche:hover {
+    background: #eef2ff;
+    border-color: #93c5fd;
+}
+
+.fiche-detail {
+    margin-top: 1rem;
+}
+
+.fiche-detail ul {
+    margin-top: 0.5rem;
+    padding-left: 1.1rem;
+}
+
+.fiche-detail li {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+/* Quiz */
+
+#quiz-container {
+    margin-top: 0.6rem;
+}
+
+#quiz-question {
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+#quiz-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin-bottom: 0.8rem;
+}
+
+.quiz-choice {
+    border-radius: 0.6rem;
+    border: 1px solid #e5e7eb;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    background: #f9fafb;
+    font-size: 0.9rem;
+}
+
+.quiz-choice:hover {
+    background: #e5e7eb;
+}
+
+.quiz-choice.selected {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+#quiz-feedback {
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+}
+
+.correct {
+    color: #15803d;
+}
+
+.incorrect {
+    color: #b91c1c;
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid #e5e7eb;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    color: #6b7280;
+    text-align: center;
+}
+
+/* MODE SOMBRE */
+
+body.dark {
+    background: #0f172a;
+    color: #f1f5f9;
+}
+
+body.dark .card {
+    background: #1e293b;
+    color: #f1f5f9;
+}
+
+body.dark header {
+    background: linear-gradient(135deg, #000, #1e293b);
+}
+
+body.dark .fiche {
+    background: #1e293b;
+    border-color: #475569;
+}
+
+body.dark nav a {
+    color: #e2e8f0;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+body.dark .btn.secondary {
+    background: #334155;
+    color: #f1f5f9;
+}
+
+body.dark .btn.secondary:hover {
+    background: #475569;
+}
+
+body.dark #quiz-choice {
+    background: #1e293b;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive */
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ------------------------------
+   MODE SOMBRE — QUIZ CLEAN UI
+------------------------------ */
+
+body.dark #quiz-container {
+    color: #f1f5f9;
+}
+
+body.dark .quiz-choice {
+    background: #1e293b;             /* Gris bleu foncé */
+    border: 1px solid #475569;       /* Bordure douce */
+    color: #f8fafc;                  /* Texte blanc bleuté */
+    transition: 0.2s ease;
+}
+
+body.dark .quiz-choice:hover {
+    background: #334155;             /* Hover plus clair */
+    border-color: #64748b;           
+}
+
+body.dark .quiz-choice.selected {
+    background: #3b82f6;             /* Bleu sélection moderne */
+    border-color: #60a5fa;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+/* Feedback réponses */
+body.dark #quiz-feedback.correct {
+    color: #4ade80;   /* Vert clair */
+}
+
+body.dark #quiz-feedback.incorrect {
+    color: #f87171;   /* Rouge clair */
+}
+
+/* Boutons du quiz */
+body.dark #quiz-validate {
+    background: #3b82f6;  /* Bleu moderne */
+    color: white;
+}
+
+body.dark #quiz-validate:hover {
+    background: #2563eb;
+}
+
+body.dark #quiz-next {
+    background: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #475569;
+}
+
+body.dark #quiz-next:hover {
+    background: #334155;
+}
+
+/* Score final */
+body.dark #quiz-score {
+    color: #e2e8f0;
+}
+
+/* ============================
+   SWITCH LUNE / SOLEIL STYLE MAQUETTE
+============================ */
+
+.theme-switch {
+    position: relative;
+    width: 72px;
+    height: 32px;
+    border-radius: 999px;
+    background: #6b7280; /* gris */
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* zone interne avec les icônes */
+.switch-track {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    pointer-events: none;
+}
+
+/* Lune (à gauche) */
+.icon-moon {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    box-shadow: inset -4px 0 0 0 #f9fafb; /* croissant */
+    opacity: 0.85;
+}
+
+/* Soleil (à droite) */
+.icon-sun {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #facc15; /* jaune */
+    box-shadow: 0 0 0 2px #fef9c3;
+}
+
+/* petit carré blanc à droite comme dans la maquette */
+.switch-knob {
+    position: absolute;
+    width: 30px;
+    height: 26px;
+    border-radius: 12px;
+    background: #f9fafb;
+    right: 3px;
+    top: 3px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: transform 0.25s ease;
+}
+
+/* En mode sombre : on bascule le carré à gauche */
+body.dark .switch-knob {
+    transform: translateX(-36px);
+}
+
+/* Optionnel : adapter couleurs en dark mode */
+body.dark .theme-switch {
+    background: #4b5563;
+}
+
+body.dark .icon-sun {
+    background: #e5e7eb;
+    box-shadow: 0 0 0 2px #cbd5f5;
+}

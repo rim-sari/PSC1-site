@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Révision PSC1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 data-i18n="title">Révision PSC1</h1>
+        <p class="subtitle" data-i18n="subtitle">Protéger • Alerter • Secourir</p>
+
+        <!-- NAV + LANG + SWITCH sur la même ligne -->
+        <nav class="header-nav">
+            <div class="nav-links">
+                <a href="#intro" data-i18n="nav_home">Accueil</a>
+                <a href="#fiches" data-i18n="nav_sheets">Fiches</a>
+                <a href="#quiz" data-i18n="nav_quiz">Quiz</a>
+                <a href="#ressources" data-i18n="nav_resources">Ressources</a>
+            </div>
+
+            <div class="nav-controls">
+                <!-- Boutons langue (JS les utilise) -->
+                <button id="lang-fr" class="btn small lang-btn">FR</button>
+                <button id="lang-en" class="btn small lang-btn">EN</button>
+
+                <!-- Switch lune/soleil style maquette -->
+                <button id="toggle-theme" class="theme-switch" aria-label="Basculer le thème">
+                    <span class="switch-track">
+                        <span class="icon-moon"></span>
+                        <span class="icon-sun"></span>
+                    </span>
+                    <span class="switch-knob"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- INTRO -->
+    <section id="intro" class="card">
+        <h2 data-i18n="welcome_title">Bienvenue 🎓</h2>
+        <p data-i18n="welcome_text">
+            Ce site t'aide à réviser les notions clés du PSC1.
+        </p>
+        <p class="warning" data-i18n="warning">
+            ⚠️ Ce site ne remplace pas une formation officielle. En cas d'urgence, appelle les secours (15, 18, 112).
+        </p>
+        <div class="intro-buttons">
+            <a href="#fiches" class="btn primary" data-i18n="btn_memo">Voir les fiches mémo</a>
+            <a href="#quiz" class="btn secondary" data-i18n="btn_quiz">Lancer un quiz</a>
+        </div>
+    </section>
+
+    <!-- FICHES -->
+    <section id="fiches">
+        <h2 data-i18n="fiches_title">Fiches mémo PSC1</h2>
+
+        <div class="grid">
+            <article class="fiche" data-fiche="protection">
+                <h3 data-i18n="sheet_protect">1. Protéger</h3>
+                <button class="btn small" data-i18n="btn_details">Voir le détail</button>
+            </article>
+
+            <article class="fiche" data-fiche="alerte">
+                <h3 data-i18n="sheet_alert">2. Alerter</h3>
+                <button class="btn small" data-i18n="btn_details">Voir le détail</button>
+            </article>
+
+            <article class="fiche" data-fiche="inconscience">
+                <h3 data-i18n="sheet_unconscious">3. Inconscience</h3>
+                <button class="btn small" data-i18n="btn_details">Voir le détail</button>
+            </article>
+
+            <article class="fiche" data-fiche="hemorragie">
+                <h3 data-i18n="sheet_bleeding">4. Hémorragies</h3>
+                <button class="btn small" data-i18n="btn_details">Voir le détail</button>
+            </article>
+
+            <article class="fiche" data-fiche="malaise">
+                <h3 data-i18n="sheet_malaise">5. Malaise</h3>
+                <button class="btn small" data-i18n="btn_details">Voir le détail</button>
+            </article>
+
+            <article class="fiche" data-fiche="plaies">
+                <h3 data-i18n="sheet_wounds">6. Plaies & brûlures</h3>
+                <button class="btn small" data-i18n="btn_details">Voir le détail</button>
+            </article>
+        </div>
+
+        <div id="fiche-detail" class="card fiche-detail hidden">
+            <h3 id="fiche-title"></h3>
+            <ul id="fiche-content"></ul>
+        </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="card">
+        <h2 data-i18n="quiz_title">Quiz PSC1 🧠</h2>
+
+        <div id="quiz-container">
+            <div id="quiz-question"></div>
+            <div id="quiz-choices"></div>
+            <button id="quiz-validate" class="btn primary" disabled data-i18n="btn_validate">Valider</button>
+            <button id="quiz-next" class="btn secondary hidden" data-i18n="btn_next">Suivant</button>
+            <div id="quiz-feedback"></div>
+            <div id="quiz-score"></div>
+        </div>
+
+        <button id="quiz-restart" class="btn secondary hidden" data-i18n="btn_restart">
+            Recommencer
+        </button>
+    </section>
+
+    <!-- RESSOURCES -->
+    <section id="ressources" class="card">
+        <h2 data-i18n="resources_title">Ressources & conseils 📚</h2>
+        <ul>
+            <li data-i18n="resource1">Inscris-toi à une session PSC1 auprès d'une association officielle.</li>
+            <li data-i18n="resource2">Relis régulièrement les fiches de ta formation.</li>
+            <li data-i18n="resource3">Teste-toi avec des quiz et exercices pratiques.</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>PSC1 Revision Website — Portfolio Project</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
