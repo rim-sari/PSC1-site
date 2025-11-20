@@ -91,7 +91,7 @@ const translations = {
         nav_quiz: "Quiz",
         nav_resources: "Resources",
 
-        welcome_title: "Welcome 🎓",
+        welcome_title: "Welcome ",
         welcome_text: "This site helps you review the key PSC1 first aid concepts.",
         warning: "⚠️ This site does not replace official training. In an emergency, call 112 (or your local emergency number).",
 
@@ -110,9 +110,9 @@ const translations = {
         sheet_malaise: "5. Malaise",
         sheet_wounds: "6. Wounds & burns",
 
-        quiz_title: "PSC1 Quiz 🧠",
+        quiz_title: "PSC1 Quiz ",
 
-        resources_title: "Resources & advice 📚",
+        resources_title: "Resources & advice ",
         resource1: "Register for a PSC1 training session with an official organisation.",
         resource2: "Regularly review your training material and summary sheets.",
         resource3: "Test yourself with quizzes, role plays and scenarios.",
